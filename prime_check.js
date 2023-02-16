@@ -1,12 +1,8 @@
-let a = 5
-let count=0
-for (let i = 1; i <= a; i++) {
-  if (a %i !== 0)
-    count++
+let number = 11;
+let count = 0;
+
+for(let i=2; i<number;){
+    number%i===0 ? count++ :  i++
 }
-if (count == 3) {
-  console.log("this is prime number")
-}
-else {
-    console.log("not a prime")
-  }
+
+count===0 ? console.log("Prime number") : console.log("Not Prime Number");
